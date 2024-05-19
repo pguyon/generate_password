@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Générateur de mot de passe</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Générer un mot de passe</h1>
+      <fieldset class="container-number">
+        <legend>Longueur du mot de passe</legend>
+        <input type="number" name="number" id="number" min="16" value="16" />
+      </fieldset>
+      <fieldset>
+        <legend>Options</legend>
+        <label
+          ><input type="checkbox" id="uppercase" checked /> Majuscules</label
+        >
+        <label
+          ><input type="checkbox" id="lowercase" checked /> Minuscules</label
+        >
+        <label><input type="checkbox" id="numbers" checked /> Chiffres</label>
+        <label><input type="checkbox" id="symbols" checked /> Symboles</label>
+      </fieldset>
+      <button class="generate">Générer</button>
+      <button class="reset">Réinitialiser</button>
+      <p>Votre mot de passe : <span class="password-output"></span></p>
+      <button class="copy">Copier dans le presse-papiers</button>
+      <p>Force du mot de passe : <span class="strength"></span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
